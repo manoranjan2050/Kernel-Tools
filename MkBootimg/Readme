@@ -1,0 +1,10 @@
+
+First find md5sum of zImage (say b18758380a23ba2f487e0adf01086fdb )
+
+make boot.img whith this command 
+
+./mkbootimg --kernel zImage --ramdisk ramdisk.gz --base 0x81600000 --kernelMD5 b18758380a23ba2f487e0adf01086fdb -o gboot.img
+
+
+NOTE the '--base' opion it is constant for all GT-S5360-or GT-S6102 Phones
+ 
